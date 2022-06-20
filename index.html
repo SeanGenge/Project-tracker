@@ -6,29 +6,35 @@
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
+        <!--Top bar with time interval-->
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
               <h1 class="display-4 text-center">Project Tracker</h1>
               <p class="lead text-center">Current Date and Time:</p>
               <div class="text-center" id="current-time"></div>
             </div>
-          </div>
-          <div class="card" style="width: 18rem;">
+        </div>
+
+
+        <!--Bootstrap Card created-->
+        <div class="card" style="width: 18rem;">
             <h5 class="card-header">Instructions</h5>
-            <div class="card-body">
-              <p class="card-text">Click button to do things</p>
+            <div class="card-body bg-secondary ">
+              <p class="card-text text-white font-italic">Click button to do things</p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">Project Name</li>
+              <li class="list-group-item">Project Type</li>
+              <li class="list-group-item">Due Date</li>
+              <li class="list-group-item">Hourly Rate</li>
             </ul>
             <div class="card-body">
                 <a href="#" class="btn btn-primary" id="modal-button" data-toggle="modal" data-target="#target-modal">Go somewhere</a>
             </div>
-          </div>
+        </div>
 
-          <div class="modal" tabindex="-1" id="target-modal">
+        <!--Modal pop up-->
+        <div class="modal" tabindex="-1" id="target-modal">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -46,7 +52,7 @@
                 </div>
               </div>
             </div>
-          </div>
+        </div>
 
 
 
