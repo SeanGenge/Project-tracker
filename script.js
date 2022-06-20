@@ -5,6 +5,11 @@ function displayCurrentTime(){
 
 setInterval(displayCurrentTime);
 
+$('#modal-button').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })
+
+
 
 
 
