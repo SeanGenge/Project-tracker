@@ -1,6 +1,6 @@
 
 function displayCurrentTime(){
-    $("#current-time").text(moment().format("MMM Do YYYY, h:mm:ss"));
+    $("#current-time").text(moment().format("MMM D, YYYY [at] h:mm:ss a"));
 }
 
 setInterval(displayCurrentTime);
