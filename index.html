@@ -18,9 +18,9 @@
 
         <!--Bootstrap Card created-->
         <div class="card" style="width: 18rem;">
-            <h5 class="card-header">Instructions</h5>
-            <div class="card-body bg-secondary ">
-              <p class="card-text text-white font-italic">Click button to do things</p>
+            <h5 class="card-header bg-dark-blue text-light">Instructions</h5>
+            <div class="card-body bg-light">
+              <p class="card-text font-italic">Click the button below to open a form and provide information for the following</p>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Project Name</li>
@@ -28,8 +28,8 @@
               <li class="list-group-item">Due Date</li>
               <li class="list-group-item">Hourly Rate</li>
             </ul>
-            <div class="card-body">
-                <a href="#" class="btn btn-primary" id="modal-button" data-toggle="modal" data-target="#target-modal">Go somewhere</a>
+            <div class="card-body bg-dark-blue">
+                <a href="#" class="btn btn-light btn-block btn-sm" id="modal-button" data-toggle="modal" data-target="#target-modal">Add Project</a>
             </div>
         </div>
 
@@ -37,13 +37,23 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Modal title</h5>
+                  <h5 class="modal-title">Add Project</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p>Modal body text goes here.</p>
+                  <form>
+                    <label for="projectName">Project Name</label>
+                    <input id="projectName" type="text" />
+                    <label for="projectType">Project Type</label>
+                    <select id="projectType">
+                    </select>
+                    <label for="dueDate">Due Date</label>
+                    <input type="text" id="dueDate" />
+                    <label for="hourlyRate">Hourly Rate</label>
+                    
+                  </form>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
